@@ -1,0 +1,119 @@
+2025-01-09 10:27:39,272 - utils - ERROR - Error writing to file /home/matth/notes_backup/projects/self-quantifiying-application.md: unexpected '{' in field name
+2025-01-09 10:27:39,352 - utils - ERROR - Error writing to file /home/matth/notes_backup/projects/startup/influencer/message.md: 'growth, success, money\\'
+2025-01-09 10:27:39,494 - utils - ERROR - Error writing to file /home/matth/notes_backup/projects/startup/gratitude-vault/gratitude-vault.md: ' getServerSession '
+2025-01-09 10:30:35,459 - utils - INFO - {'id': 'market-research', 'aliases': [], 'tags': []}
+2025-01-09 10:30:35,459 - utils - INFO - ---
+
+Reddit post:
+https://www.reddit.com/r/Lifelogging/comments/1fk0ruw/thinking_of_building_an_app_for_logging_using/
+
+I’m getting most of what you’re talking about with my workflow. I use Apple Notes and insert a recording that will contain audio of me just talking about my day knowing the types of things to include that I want captured such as the meals I ate, the projects I’m working on, the progress I made, things like that. The recorder allows you to pause and resume your recording so it’s perfect because every time I open up the Notes app the record/pause button is sitting right there and it’s very quick.
+
+At the end of the day, the recording gives me an automatic transcript which I copy and paste into ChatGPT using a custom GPT I made to organize all of my daily notes into topics, to do items, and other sections. I use Obsidian to do my logging so I’ve set the GPT to include back links for various topics based on a list I gave it to choose from. Then I just copy and paste that into an obsidian page and all of the back links are active. Then I have an obsidian plug-in that I’ve linked to ChatGPT using an API and I can ask questions about my Obsidian notes which means I can dig into my life log in informative ways.
+
+Because ChatGPT and other large language models sometimes make mistakes it isn’t perfect but I think it’s the right type of model for when large language models improve sufficiently to give quality insight into that type of data every time without error.
+
+Right now I think of it like kind of a dumb personal assistant. I ask you to tell me stuff about the contents of my obsidian vault and when something sounds strange, I might say that doesn’t sound quite right can you check again? And it will and Sometimes it was right and sometimes it finds that it made an error. Since I’m not expecting it to be perfect it’s not at all a disappointing experience for me.
+
+I’m super excited about the future when having an accurate GPT that can query massive data sets will be available to an average user. I’m thinking five years or so there will be a model that is sufficiently accurate then I’ll feel confident just asking a questions and knowing that it’s telling me factual information about my life.
+
+This really is exciting because we’re right on the edge of seeing how personal data and knowledge management will evolve with these advancements. Just thinking about how quickly we’ll be able to recall personal memories or notes from our daily lives with nothing more than a voice prompt is incredible.
+
+I think this is game-changing for life logging because it removes the friction of organizing information ahead of time—just speak it, type it, or photograph it, and your future self can pull it up exactly when it’s needed. And it’ll only get more precise as the tech advances.
+
+---
+2025-01-09 10:31:50,211 - utils - INFO - {'id': 'market-research', 'aliases': [], 'tags': []}
+2025-01-09 10:31:50,211 - utils - INFO - ---
+
+Reddit post:
+https://www.reddit.com/r/Lifelogging/comments/1fk0ruw/thinking_of_building_an_app_for_logging_using/
+
+I’m getting most of what you’re talking about with my workflow. I use Apple Notes and insert a recording that will contain audio of me just talking about my day knowing the types of things to include that I want captured such as the meals I ate, the projects I’m working on, the progress I made, things like that. The recorder allows you to pause and resume your recording so it’s perfect because every time I open up the Notes app the record/pause button is sitting right there and it’s very quick.
+
+At the end of the day, the recording gives me an automatic transcript which I copy and paste into ChatGPT using a custom GPT I made to organize all of my daily notes into topics, to do items, and other sections. I use Obsidian to do my logging so I’ve set the GPT to include back links for various topics based on a list I gave it to choose from. Then I just copy and paste that into an obsidian page and all of the back links are active. Then I have an obsidian plug-in that I’ve linked to ChatGPT using an API and I can ask questions about my Obsidian notes which means I can dig into my life log in informative ways.
+
+Because ChatGPT and other large language models sometimes make mistakes it isn’t perfect but I think it’s the right type of model for when large language models improve sufficiently to give quality insight into that type of data every time without error.
+
+Right now I think of it like kind of a dumb personal assistant. I ask you to tell me stuff about the contents of my obsidian vault and when something sounds strange, I might say that doesn’t sound quite right can you check again? And it will and Sometimes it was right and sometimes it finds that it made an error. Since I’m not expecting it to be perfect it’s not at all a disappointing experience for me.
+
+I’m super excited about the future when having an accurate GPT that can query massive data sets will be available to an average user. I’m thinking five years or so there will be a model that is sufficiently accurate then I’ll feel confident just asking a questions and knowing that it’s telling me factual information about my life.
+
+This really is exciting because we’re right on the edge of seeing how personal data and knowledge management will evolve with these advancements. Just thinking about how quickly we’ll be able to recall personal memories or notes from our daily lives with nothing more than a voice prompt is incredible.
+
+I think this is game-changing for life logging because it removes the friction of organizing information ahead of time—just speak it, type it, or photograph it, and your future self can pull it up exactly when it’s needed. And it’ll only get more precise as the tech advances.
+
+---
+2025-01-09 10:31:50,211 - utils - INFO - writing metadata
+2025-01-09 10:31:50,211 - utils - INFO - {'id': 'market-research', 'aliases': [], 'tags': []}
+2025-01-09 10:35:55,046 - utils - INFO - {'id': 'market-research', 'aliases': [], 'tags': []}
+2025-01-09 10:35:55,046 - utils - INFO - ---
+
+Reddit post:
+https://www.reddit.com/r/Lifelogging/comments/1fk0ruw/thinking_of_building_an_app_for_logging_using/
+
+I’m getting most of what you’re talking about with my workflow. I use Apple Notes and insert a recording that will contain audio of me just talking about my day knowing the types of things to include that I want captured such as the meals I ate, the projects I’m working on, the progress I made, things like that. The recorder allows you to pause and resume your recording so it’s perfect because every time I open up the Notes app the record/pause button is sitting right there and it’s very quick.
+
+At the end of the day, the recording gives me an automatic transcript which I copy and paste into ChatGPT using a custom GPT I made to organize all of my daily notes into topics, to do items, and other sections. I use Obsidian to do my logging so I’ve set the GPT to include back links for various topics based on a list I gave it to choose from. Then I just copy and paste that into an obsidian page and all of the back links are active. Then I have an obsidian plug-in that I’ve linked to ChatGPT using an API and I can ask questions about my Obsidian notes which means I can dig into my life log in informative ways.
+
+Because ChatGPT and other large language models sometimes make mistakes it isn’t perfect but I think it’s the right type of model for when large language models improve sufficiently to give quality insight into that type of data every time without error.
+
+Right now I think of it like kind of a dumb personal assistant. I ask you to tell me stuff about the contents of my obsidian vault and when something sounds strange, I might say that doesn’t sound quite right can you check again? And it will and Sometimes it was right and sometimes it finds that it made an error. Since I’m not expecting it to be perfect it’s not at all a disappointing experience for me.
+
+I’m super excited about the future when having an accurate GPT that can query massive data sets will be available to an average user. I’m thinking five years or so there will be a model that is sufficiently accurate then I’ll feel confident just asking a questions and knowing that it’s telling me factual information about my life.
+
+This really is exciting because we’re right on the edge of seeing how personal data and knowledge management will evolve with these advancements. Just thinking about how quickly we’ll be able to recall personal memories or notes from our daily lives with nothing more than a voice prompt is incredible.
+
+I think this is game-changing for life logging because it removes the friction of organizing information ahead of time—just speak it, type it, or photograph it, and your future self can pull it up exactly when it’s needed. And it’ll only get more precise as the tech advances.
+
+---
+2025-01-09 10:35:55,046 - utils - INFO - writing metadata
+2025-01-09 10:35:55,046 - utils - INFO - {'id': 'market-research', 'aliases': [], 'tags': []}
+2025-01-09 10:36:38,898 - utils - INFO - {'id': 'market-research', 'aliases': [], 'tags': []}
+2025-01-09 10:36:38,898 - utils - INFO - ---
+
+Reddit post:
+https://www.reddit.com/r/Lifelogging/comments/1fk0ruw/thinking_of_building_an_app_for_logging_using/
+
+I’m getting most of what you’re talking about with my workflow. I use Apple Notes and insert a recording that will contain audio of me just talking about my day knowing the types of things to include that I want captured such as the meals I ate, the projects I’m working on, the progress I made, things like that. The recorder allows you to pause and resume your recording so it’s perfect because every time I open up the Notes app the record/pause button is sitting right there and it’s very quick.
+
+At the end of the day, the recording gives me an automatic transcript which I copy and paste into ChatGPT using a custom GPT I made to organize all of my daily notes into topics, to do items, and other sections. I use Obsidian to do my logging so I’ve set the GPT to include back links for various topics based on a list I gave it to choose from. Then I just copy and paste that into an obsidian page and all of the back links are active. Then I have an obsidian plug-in that I’ve linked to ChatGPT using an API and I can ask questions about my Obsidian notes which means I can dig into my life log in informative ways.
+
+Because ChatGPT and other large language models sometimes make mistakes it isn’t perfect but I think it’s the right type of model for when large language models improve sufficiently to give quality insight into that type of data every time without error.
+
+Right now I think of it like kind of a dumb personal assistant. I ask you to tell me stuff about the contents of my obsidian vault and when something sounds strange, I might say that doesn’t sound quite right can you check again? And it will and Sometimes it was right and sometimes it finds that it made an error. Since I’m not expecting it to be perfect it’s not at all a disappointing experience for me.
+
+I’m super excited about the future when having an accurate GPT that can query massive data sets will be available to an average user. I’m thinking five years or so there will be a model that is sufficiently accurate then I’ll feel confident just asking a questions and knowing that it’s telling me factual information about my life.
+
+This really is exciting because we’re right on the edge of seeing how personal data and knowledge management will evolve with these advancements. Just thinking about how quickly we’ll be able to recall personal memories or notes from our daily lives with nothing more than a voice prompt is incredible.
+
+I think this is game-changing for life logging because it removes the friction of organizing information ahead of time—just speak it, type it, or photograph it, and your future self can pull it up exactly when it’s needed. And it’ll only get more precise as the tech advances.
+
+---
+2025-01-09 10:36:38,898 - utils - INFO - writing metadata
+2025-01-09 10:36:38,898 - utils - INFO - {'id': 'market-research', 'aliases': [], 'tags': []}
+2025-01-09 10:36:48,328 - utils - INFO - {'aliases': [], 'id': 'market-research', 'tags': []}
+2025-01-09 10:36:48,328 - utils - INFO - ---
+
+Reddit post:
+https://www.reddit.com/r/Lifelogging/comments/1fk0ruw/thinking_of_building_an_app_for_logging_using/
+
+I’m getting most of what you’re talking about with my workflow. I use Apple Notes and insert a recording that will contain audio of me just talking about my day knowing the types of things to include that I want captured such as the meals I ate, the projects I’m working on, the progress I made, things like that. The recorder allows you to pause and resume your recording so it’s perfect because every time I open up the Notes app the record/pause button is sitting right there and it’s very quick.
+
+At the end of the day, the recording gives me an automatic transcript which I copy and paste into ChatGPT using a custom GPT I made to organize all of my daily notes into topics, to do items, and other sections. I use Obsidian to do my logging so I’ve set the GPT to include back links for various topics based on a list I gave it to choose from. Then I just copy and paste that into an obsidian page and all of the back links are active. Then I have an obsidian plug-in that I’ve linked to ChatGPT using an API and I can ask questions about my Obsidian notes which means I can dig into my life log in informative ways.
+
+Because ChatGPT and other large language models sometimes make mistakes it isn’t perfect but I think it’s the right type of model for when large language models improve sufficiently to give quality insight into that type of data every time without error.
+
+Right now I think of it like kind of a dumb personal assistant. I ask you to tell me stuff about the contents of my obsidian vault and when something sounds strange, I might say that doesn’t sound quite right can you check again? And it will and Sometimes it was right and sometimes it finds that it made an error. Since I’m not expecting it to be perfect it’s not at all a disappointing experience for me.
+
+I’m super excited about the future when having an accurate GPT that can query massive data sets will be available to an average user. I’m thinking five years or so there will be a model that is sufficiently accurate then I’ll feel confident just asking a questions and knowing that it’s telling me factual information about my life.
+
+This really is exciting because we’re right on the edge of seeing how personal data and knowledge management will evolve with these advancements. Just thinking about how quickly we’ll be able to recall personal memories or notes from our daily lives with nothing more than a voice prompt is incredible.
+
+I think this is game-changing for life logging because it removes the friction of organizing information ahead of time—just speak it, type it, or photograph it, and your future self can pull it up exactly when it’s needed. And it’ll only get more precise as the tech advances.
+
+---
+---
+## PARAObsidian
+PARA-linking: [[startup]], [[information-capture]]
+2025-01-09 10:36:48,328 - utils - INFO - writing metadata
+2025-01-09 10:36:48,328 - utils - INFO - {'aliases': [], 'id': 'market-research', 'tags': []}
