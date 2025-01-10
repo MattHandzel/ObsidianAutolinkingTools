@@ -93,27 +93,6 @@ def convert_wikitext_to_md(wikitext: str) -> str:
     If you don't have pandoc installed, you can rely solely on mwparserfromhell
     transformations or other pure-Python approaches like 'bye-wiki' if you prefer.
     """
-    # Step 1: Use mwparserfromhell to parse
-    code = mwparserfromhell.parse(wikitext)
-    cleaned_text = code.strip_code()  # produces plain text
-
-    # Step 2: (Optional) Feed the plain text to pandoc to produce Markdown
-    # We'll do a subprocess call to pandoc:
-    try:
-        result = subprocess.run(
-            ["pandoc", "--from", "html", "--to", "markdown_strict"],
-            input=cleaned_text.encode("utf-8"),
-            capture_output=True,
-            check=True,
-        )
-        return result.stdout.decode("utf-8", errors="replace")
-    except FileNotFoundError:
-        # pandoc not installed, just return the plain text from mwparserfromhell
-        logger.warning("pandoc not found. Returning plain text instead of Markdown.")
-        return cleaned_text
-    except subprocess.CalledProcessError as e:
-        logger.error(f"Pandoc failed: {e}")
-        return cleaned_text
 
 
 ################################################################################

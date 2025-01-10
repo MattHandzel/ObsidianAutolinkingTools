@@ -22,8 +22,8 @@ para_folders = ["projects", "areas", "resources", "archive", "zettlekasten"]
 banned_folders = []
 banned_folders = ["sam-thomas-second-brain"]
 
-project_name = "PARAObsidian"
-bottom_matter_header = f"\n---\n## {project_name}"
+project_name = "===Automatic Note Linker==="
+bottom_matter_header = f"\n---\n\n**{project_name}**"
 
 
 def get_all_notes(root_directory):
@@ -71,17 +71,27 @@ def update_bottom_matter(content, data):
         return False
     content = remove_bottom_matter(content)
     content += bottom_matter_header
+    content += "\n"
     for key, value in data.items():
         if type(value) == list:
             value = ", ".join(value)
         content += f"\n{key}: {value}"
+    if len(data) > 0:
+        content += "\n"
     return content
 
 
-def loop_through_notes(root_directory, functions, max_notes=INT_MAX):
+def loop_through_notes(
+    root_directory, functions, max_notes=INT_MAX, clear_bottom_matter=False
+):
     notes = get_all_notes(root_directory)
     num_notes_processed = 0
     for note in notes:
+        if (
+            note
+            != "/home/matth/notes_backup/resources/cooking/recepies/korean-bbq-beef-bowl.md"
+        ):
+            continue
         if num_notes_processed >= max_notes:
             return
 
@@ -101,7 +111,9 @@ def loop_through_notes(root_directory, functions, max_notes=INT_MAX):
         meta_data, content = parse_note(raw_content)
 
         bottom_matter_data = {}
-        content = remove_bottom_matter(content)
+
+        if clear_bottom_matter:
+            content = remove_bottom_matter(content)
 
         for function in functions:
             new_bottom_matter_data, new_content, did_update_content = function(
@@ -115,10 +127,17 @@ def loop_through_notes(root_directory, functions, max_notes=INT_MAX):
 
         if bottom_matter_data and bottom_matter_data != {}:
             content = update_bottom_matter(content, bottom_matter_data)
+        print(content)
+        print(meta_data)
+        print(bottom_matter_data)
 
         try:
             with open(note, "w") as f:
-                f.write(frontmatter.dumps(Post(content, **meta_data)))
+                if meta_data is {} or len(meta_data) == 0 or meta_data is None:
+                    f.write(content)
+                else:
+                    f.write(frontmatter.dumps(Post(content, **meta_data)))
+
         except Exception as e:
             logger.error(f"Error writing to file {note}: {e}")
             # Replace with old content

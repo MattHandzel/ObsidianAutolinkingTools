@@ -12,6 +12,7 @@ with pkgs;
       python311Packages.sentence-transformers
       python311Packages.seaborn
       python311Packages.wikitextparser
+      python311Packages.wikipedia
 
       python311
       ollama

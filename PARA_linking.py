@@ -10,7 +10,6 @@ def link_folders_into_notes(note_path, meta_data, content, root_directory):
     parent_folders = note_path.split(root_directory)[1].split("/")[1:][:-1]
     if not any([folder in para_folders for folder in parent_folders]):
         return None, None, False
-    print(parent_folders)
 
     # don't care about anything in archive
     if "archive" in parent_folders:
