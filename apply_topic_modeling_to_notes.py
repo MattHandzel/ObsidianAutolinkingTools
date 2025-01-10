@@ -46,6 +46,7 @@ def get_topics_for_every_note(note_path, meta_data, content, root_directory):
     if detect_language(content) != "en":
         return None, None, False
     topics = run_inference_on_bert_topic_model(bert_topic_model, content)
+    print("topic number", topics)
     topics = convert_topics_to_labels(topics)
     print(f"Topics for {note_path}: {topics}")
 

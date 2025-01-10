@@ -22,7 +22,7 @@ para_folders = ["projects", "areas", "resources", "archive", "zettlekasten"]
 banned_folders = []
 banned_folders = ["sam-thomas-second-brain"]
 
-project_name = "AutomatedLinking"
+project_name = "PARAObsidian"
 bottom_matter_header = f"\n---\n## {project_name}"
 
 
