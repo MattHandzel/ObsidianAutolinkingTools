@@ -74,19 +74,19 @@ def clean_custom_patterns(text):
     # TODO: Thoroughly test these
     # Replace: email, phone, youtube link, regular link  with [email], [phone], [youtube], [link]
     clean_text = re.sub(  # email
-        r"([a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+)", "[email]", text
+        r"([a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+)", "", text
     )
     clean_text = re.sub(  # phone
         r"(\d{3}[-\.\s]??\d{3}[-\.\s]??\d{4}|\(\d{3}\)\s*\d{3}[-\.\s]??\d{4}|\d{3}[-\.\s]??\d{4})",
-        "[phone]",
+        "",
         clean_text,
     )
     clean_text = re.sub(  # youtube link
-        r"(https?:\/\/)?(www\.)?(youtube\.com|youtu\.?be)\/.+", "[youtube]", clean_text
+        r"(https?:\/\/)?(www\.)?(youtube\.com|youtu\.?be)\/.+", "", clean_text
     )
     clean_text = re.sub(  # regular link
         r"(http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+)",
-        "[link]",
+        "",
         clean_text,
     )
 
@@ -149,3 +149,48 @@ def remove_markdown_formatting(text):
     # Remove markdown bold and italic
     text = re.sub(r"[*_]", "", text)
     return text
+
+
+def cleanse_content(content):
+    """
+    Clean and preprocess content using your custom pipeline.
+    (Same as in the original code)
+    """
+    return remove_words(
+        remove_numbers(
+            convert_to_lowercase(
+                remove_whitespace(
+                    remove_special_characters(
+                        remove_html_tags(
+                            (
+                                clean_custom_patterns(
+                                    ((remove_markdown_formatting(content)))
+                                )
+                            )
+                        )
+                    )
+                )
+            )
+        )
+    )
+
+
+def tokenize_content(content):
+    """
+    Tokenize, remove stopwords, and lemmatize.
+    (Same as in the original code)
+    """
+    tokens = tokenize_text(content)
+    tokens = remove_stopwords(tokens)
+    tokens = lemmatize_text(tokens)
+    return tokens
+
+
+def prepare_raw_content_for_bert_topic(content):
+    """
+    Cleanses and tokenizes content for TopicBERT.
+    In BERTopic, you can either supply raw strings or tokenized strings.
+    Here we return tokenized form joined as a single string.
+    """
+    tokens = tokenize_content(cleanse_content(content))
+    return " ".join(tokens)

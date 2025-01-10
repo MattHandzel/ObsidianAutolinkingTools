@@ -3,6 +3,7 @@ import frontmatter
 from frontmatter import Post
 import logging
 import argparse
+import json
 
 DEBUG = False
 INT_MAX = int(2**63)
@@ -19,7 +20,7 @@ logger.addHandler(handler)
 
 para_folders = ["projects", "areas", "resources", "archive", "zettlekasten"]
 banned_folders = []
-# banned_folders = ["sam-thomas-second-brain"]
+banned_folders = ["sam-thomas-second-brain"]
 
 project_name = "AutomatedLinking"
 bottom_matter_header = f"\n---\n## {project_name}"
@@ -124,3 +125,6 @@ def loop_through_notes(root_directory, functions, max_notes=INT_MAX):
             with open(note, "w") as f:
                 f.write(raw_content)
         num_notes_processed += 1
+
+
+# Get extra data
