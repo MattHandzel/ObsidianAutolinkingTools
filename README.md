@@ -7,7 +7,7 @@ This is a project I made to improve my knowledge system. It uses topic modeling 
 I use [Obsidian](https://obsidian.md/), which comes with a very nice linking feature that allows you to manuver between notes quickly and explore different topics.
 
 <video width="320" height="240" controls>
-  <source src="note-linking-obsidian-demo.mp4" type="video/mp4">
+  <source src="./note-linking-obsidian-demo.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
