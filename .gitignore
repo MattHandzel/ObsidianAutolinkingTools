@@ -2,3 +2,4 @@ wiki_md_output
 *.log
 *.pkl
 .venv
+__pycache__

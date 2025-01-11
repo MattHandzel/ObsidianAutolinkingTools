@@ -4,7 +4,9 @@ from frontmatter import Post
 import logging
 import argparse
 import json
+import ollama
 
+OLLAMA_NUM_THREADS = 14
 DEBUG = False
 INT_MAX = int(2**63)
 note_extensions = [".md"]
@@ -87,11 +89,6 @@ def loop_through_notes(
     notes = get_all_notes(root_directory)
     num_notes_processed = 0
     for note in notes:
-        if (
-            note
-            != "/home/matth/notes_backup/resources/cooking/recepies/korean-bbq-beef-bowl.md"
-        ):
-            continue
         if num_notes_processed >= max_notes:
             return
 
@@ -147,3 +144,16 @@ def loop_through_notes(
 
 
 # Get extra data
+
+
+def query_ollama(user_message, system_message, model_name="llama3.2"):
+
+    response = ollama.chat(
+        model=model_name,
+        messages=[
+            {"role": "system", "content": system_message},
+            {"role": "user", "content": user_message},
+        ],
+        options={"num_thread": OLLAMA_NUM_THREADS},
+    )
+    return response["message"]["content"].strip().lower()
