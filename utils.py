@@ -124,9 +124,6 @@ def loop_through_notes(
 
         if bottom_matter_data and bottom_matter_data != {}:
             content = update_bottom_matter(content, bottom_matter_data)
-        print(content)
-        print(meta_data)
-        print(bottom_matter_data)
 
         try:
             with open(note, "w") as f:
