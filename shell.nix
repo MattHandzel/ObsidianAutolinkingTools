@@ -13,6 +13,9 @@ with pkgs;
       python311Packages.seaborn
       python311Packages.wikitextparser
       python311Packages.wikipedia
+      python311Packages.qdrant-client
+      python311Packages.python-dotenv
+      python311Packages.flask
 
       python311
       ollama

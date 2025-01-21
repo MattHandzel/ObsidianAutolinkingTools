@@ -78,6 +78,10 @@ To run topic modeling yourself, you can download wikipedia using the `download_w
 
 After doing that, run `ollama pull llama3.2` to install the llama3.2 model, and then run `python generate_topic_labels.py` to create the human interpretable topic labels. After running, it will ask you to label any topics the model has trouble on.
 
+## TODO
+
+- [ ] Ensure notes don't have conflicting titles/content when doing note similarity check.
+
 ## Contact
 
 - **Email:** handzelmatthew@gmail.com

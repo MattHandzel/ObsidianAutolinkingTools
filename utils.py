@@ -6,7 +6,7 @@ import argparse
 import json
 import ollama
 
-OLLAMA_NUM_THREADS = 14
+OLLAMA_NUM_THREADS = 15
 DEBUG = False
 INT_MAX = int(2**63)
 note_extensions = [".md"]
@@ -22,9 +22,9 @@ logger.addHandler(handler)
 
 para_folders = ["projects", "areas", "resources", "archive", "zettlekasten"]
 banned_folders = []
-banned_folders = ["sam-thomas-second-brain"]
+# banned_folders = ["sam-thomas-second-brain"]
 
-project_name = "===Automatic Note Linker==="
+project_name = "RELATED_NOTES_BOT"
 bottom_matter_header = f"\n---\n\n**{project_name}**"
 
 
@@ -153,4 +153,4 @@ def query_ollama(user_message, system_message, model_name="llama3.2"):
         ],
         options={"num_thread": OLLAMA_NUM_THREADS},
     )
-    return response["message"]["content"].strip().lower()
+    return response["message"]["content"].strip()
